@@ -27,12 +27,8 @@ playerManager.setMessageInterceptor(
     });
 
 breakManager.setBreakClipLoadInterceptor((breakClip, breakCtx) => {
-    /** Below code will skip playback of break clips if the break position is less than 30 **/
-    let breakObj = breakCtx.break;
-    if(breakObj.position < 30)
-        return null;
-    else
-        return breakClip;
+    breakClip.whenSkippable = 5;
+    return breakClip;
 });
 
 breakManager.setBreakSeekInterceptor(function(breakSeekData) {
