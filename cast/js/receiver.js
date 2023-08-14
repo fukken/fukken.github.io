@@ -47,7 +47,7 @@ const addVASTBreaksToMedia = (mediaInformation) => {
 const castDebugLogger = cast.debug.CastDebugLogger.getInstance();
 castDebugLogger.setEnabled(true);
 castDebugLogger.loggerLevelByTags = {
-    'cast.framework.events.category.CORE': cast.framework.LoggerLevel.DEBUG
+    'cast.framework.events.category.CORE': cast.framework.LoggerLevel.INFO
 };
 
 if (context.start() != null) {
