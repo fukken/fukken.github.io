@@ -14,12 +14,14 @@ playerManager.setMessageInterceptor(
 const breakClipUrl = 'http://commondatastorage.googleapis.com/gtv-videos-bucket/sample/ElephantsDream.mp4';
 const addVASTBreaksToMedia = (mediaInformation) => {
     mediaInformation.breakClips = [
+        /**
         {
             id: "bc1",
             title: "bc1 (Pre-roll)",
             contentUrl: breakClipUrl,
             whenSkippable: 5
         },
+        **/
         {
             id: "bc2",
             title: "bc2 (Mid-roll)",
