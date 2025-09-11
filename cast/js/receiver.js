@@ -99,7 +99,8 @@ const addVASTBreaksToMedia = (mediaInformation) => {
       id: 'bc2',
       title: 'bc2 (Mid-roll)',
       vastAdsRequest: {
-        adTagUrl: generateVastUrl('midroll')
+//        adTagUrl: generateVastUrl('midroll')
+        adsResponse: '<?xml version="1.0" encoding="UTF-8"?><VAST version="3.0"></VAST>'
       }
     },
     {
