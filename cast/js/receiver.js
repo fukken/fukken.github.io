@@ -55,6 +55,7 @@ playerManager.setMessageInterceptor(
     });
 
 breakManager.setBreakClipLoadInterceptor((breakClip, breakContext) => {
+    return breakClip;
   /**
    * The code will skip playback of break clips if the break position is within
    * the first 30 seconds.
